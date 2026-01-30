@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unlock Download</title>
+<style>
+body{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  font-family:Arial;
+}
+.btn{
+  width:85%;
+  padding:15px;
+  margin:12px;
+  font-size:18px;
+  border-radius:10px;
+  border:none;
+  color:#fff;
+}
+.tg{background:#22c55e;}
+.ig{background:#e1306c;}
+.wa{background:#25d366;}
+.unlock{
+  background:#3b82f6;
+  opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🔒 Unlock Download</h2>
+<p>Follow all steps to unlock</p>
+
+<button class="btn tg"
+onclick="step(1); window.open('https://t.me/Suvoooooooo')">
+Join Telegram
+</button>
+
+<button class="btn ig"
+onclick="step(2); window.open('https://www.instagram.com/gaming_link_8138?igsh=MTNoZzE2aTNvcnBzcA==')">
+Follow Instagram
+</button>
+
+<button class="btn wa"
+onclick="step(3); window.open('https://chat.whatsapp.com/HUpH4Zt4TW68LSRuhVEt6y')">
+Join WhatsApp
+</button>
+
+<br><br>
+
+<button id="unlock" class="btn unlock" disabled onclick="go()">
+🔓 UNLOCK DOWNLOAD
+</button>
+
+<script>
+let done=[0,0,0];
+
+function step(i){
+  done[i-1]=1;
+  check();
+}
+
+function check(){
+  if(done[0] && done[1] && done[2]){
+    let u=document.getElementById("unlock");
+    u.disabled=false;
+    u.style.opacity=1;
+  }
+}
+
+function go(){
+  window.location.href="FINAL_DOWNLOAD_LINK";
+}
+</script>
+
+</body>
+</html>
